@@ -1,0 +1,42 @@
+{
+  "name": "hoofy-plugins",
+  "owner": {
+    "name": "Hendry Avila",
+    "email": "hendryavila@gmail.com"
+  },
+  "metadata": {
+    "description": "Official plugin marketplace for Hoofy — AI development companion with spec-driven development, persistent memory, and adaptive change management.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "hoofy",
+      "source": "./plugins/hoofy",
+      "description": "AI development companion that prevents hallucinations through spec-driven development, persistent memory, and adaptive change management. Includes Hoofy agent, skills (/hoofy:init, /hoofy:change, /hoofy:review), lifecycle hooks, and MCP server auto-configuration.",
+      "version": "0.5.0",
+      "author": {
+        "name": "Hendry Avila"
+      },
+      "homepage": "https://github.com/HendryAvila/Hoofy",
+      "repository": "https://github.com/HendryAvila/Hoofy",
+      "license": "MIT",
+      "keywords": [
+        "sdd",
+        "spec-driven-development",
+        "architecture",
+        "memory",
+        "mcp",
+        "code-quality",
+        "ai-governance"
+      ],
+      "category": "development",
+      "tags": [
+        "specifications",
+        "architecture",
+        "memory",
+        "quality",
+        "governance"
+      ]
+    }
+  ]
+}
