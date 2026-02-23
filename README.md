@@ -24,7 +24,7 @@ That's it. You now have:
 
 - 🐴 **Hoofy agent** — sarcastic horse-architect that teaches through humor
 - 🛠️ **26 MCP tools** — persistent memory, change pipeline, project pipeline
-- ⚡ **3 skills** — `/hoofy:init`, `/hoofy:change`, `/hoofy:review`
+- ⚡ **4 skills** — `/hoofy:init`, `/hoofy:change`, `/hoofy:review`, `/hoofy:status`
 - 🔄 **Lifecycle hooks** — auto-loads memory on session start, guides pipeline usage
 
 ## What's included
@@ -33,8 +33,27 @@ That's it. You now have:
 |---|---|
 | **Agent** | Hoofy personality — teaches concepts over code, enforces spec-driven development |
 | **MCP Server** | 14 memory tools + 5 change pipeline tools + 8 project pipeline tools |
-| **Skills** | `/hoofy:init` (start SDD project), `/hoofy:change` (adaptive change pipeline), `/hoofy:review` (check pipeline status) |
+| **Skills** | `/hoofy:init` (start SDD project), `/hoofy:change` (adaptive change pipeline), `/hoofy:review` (context-aware code review), `/hoofy:status` (pipeline status) |
 | **Hooks** | `SessionStart` loads memory context, `PostToolUse` guides pipeline progression |
+
+## Context-Aware Code Review
+
+The `/hoofy:review` skill is the **killer feature** — the only AI code reviewer that knows your project's full context:
+
+```
+/hoofy:review src/auth/         # Review specific files
+/hoofy:review HEAD~3..HEAD      # Review recent commits
+/hoofy:review #42               # Review a PR
+/hoofy:review                   # Review current changes
+```
+
+| What Hoofy reviews against | Generic AI reviewers |
+|---|---|
+| ✅ Your specifications (FR/NFR requirements) | ❌ No spec awareness |
+| ✅ Your architecture decisions (ADRs) | ❌ No ADR awareness |
+| ✅ Past bugs you already fixed (regression risk) | ❌ No memory |
+| ✅ Patterns established in previous sessions | ⚠️ Only linter rules |
+| ✅ Knowledge gaps to document | ❌ No persistent memory |
 
 ## Prerequisites
 
@@ -56,7 +75,7 @@ To get the latest version:
 ## Links
 
 - [Hoofy repo](https://github.com/HendryAvila/Hoofy) — MCP server source code
-- [Plugin docs](https://github.com/HendryAvila/Hoofy/tree/main/plugins/claude-code) — detailed plugin documentation
+- [Plugin docs](./plugins/hoofy/README.md) — detailed plugin documentation
 
 ---
 

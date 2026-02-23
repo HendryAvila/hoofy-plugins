@@ -12,8 +12,8 @@
     {
       "name": "hoofy",
       "source": "./plugins/hoofy",
-      "description": "AI development companion that prevents hallucinations through spec-driven development, persistent memory, and adaptive change management. Includes Hoofy agent, skills (/hoofy:init, /hoofy:change, /hoofy:review), lifecycle hooks, and MCP server auto-configuration.",
-      "version": "0.5.0",
+      "description": "AI development companion with context-aware code review, spec-driven development, persistent memory, and adaptive change management. Includes Hoofy agent, skills (/hoofy:init, /hoofy:change, /hoofy:review, /hoofy:status), lifecycle hooks, and MCP server auto-configuration.",
+      "version": "0.6.0",
       "author": {
         "name": "Hendry Avila"
       },
@@ -27,7 +27,9 @@
         "memory",
         "mcp",
         "code-quality",
-        "ai-governance"
+        "ai-governance",
+        "code-review",
+        "context-aware"
       ],
       "category": "development",
       "tags": [
@@ -35,7 +37,8 @@
         "architecture",
         "memory",
         "quality",
-        "governance"
+        "governance",
+        "code-review"
       ]
     }
   ]
