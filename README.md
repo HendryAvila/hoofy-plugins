@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/hendryavila-hoofy-plugins-badge.png)](https://mseep.ai/app/hendryavila-hoofy-plugins)
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/HendryAvila/Hoofy/main/assets/logo.png" alt="Hoofy" width="200" />
 </p>
